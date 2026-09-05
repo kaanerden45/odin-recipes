@@ -1,38 +1,49 @@
-/* Universal Selector: Tüm sayfadaki varsayılan kenar boşluklarını sıfırlayalım */
-* {
-  box-sizing: border-box;
-}
-
-/* Type Selector: Sayfanın yazı tipini ve arka planını ayarlayalım */
+/* Sayfa Genel Stilleri */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f9;
   color: #333333;
   padding: 20px;
 }
 
-/* Type Selector: Ana başlık stili */
+/* Başlıklar */
 h1 {
-  color: #2c3e50;
+  color: green;
   text-align: center;
 }
 
-/* Class Selector: Tarif listesi stili */
+/* Görseller (Tarif sayfaları için) */
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Ana Sayfadaki Liste Kutusu */
 .recipe-list {
-  list-style-type: square;
-  background-color: #ffffff;
-  padding: 20px 40px;
+  list-style-type: none;
+  padding: 20px;
+  border: 2px solid #3498db;
   border-radius: 8px;
+  background-color: white;
 }
 
-/* Descendant Combinator: .recipe-list içindeki linklerin stili */
-.recipe-list a {
-  color: #e67e22;
+/* Liste Elemanları Arası Boşluk */
+.recipe-list li {
+  margin-bottom: 10px;
+}
+
+/* Buton Gibi Görünen Linkler */
+a {
+  display: inline-block;
   text-decoration: none;
-  font-weight: bold;
+  background-color: purple;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
 }
 
-/* Hover stili: Fare ile linkin üzerine gelindiğinde altını çizer */
-.recipe-list a:hover {
-  text-decoration: underline;
+/* Fareyle Linkin Üzerine Gelince */
+a:hover {
+  background-color: #d35400;
 }
